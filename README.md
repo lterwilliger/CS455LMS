@@ -62,6 +62,32 @@
 - log to audit log
 - describes the data types, size of storage, constraints, defaults
 #### Update Contractor
+- require login and appropriate priv
+- browse contractor list
+- select a contractor
+- edit selected contractor record
+- details constraints
+---
+### Dues Payments
+#### Record member's dues payment
+- require login and appropriate priv
+- search the member list
+- select a member
+- enter a payment for the member
+- opens payment entry screen
+  - display member info
+  - Cash, check, ACH
+  - ... lots here describing how the payment entry is calculated & displayed
+- details constraints
+#### Record S-charter dues by contractor
+- require login and appropriate priv
+- search the contractor list
+- select a contractor
+- enter dues w/associated contractor
+- display dues entry
+### Reporting
+#### Members Dues Receipt - Union Book pg. 22
+
 ## NonFunctional Requirements
 ## Standards and References
 
