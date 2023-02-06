@@ -87,15 +87,154 @@
 - display dues entry
 ### Reporting
 #### Members Dues Receipt - Union Book pg. 22
-
+- require login and appropriate priv
+- log to audit log
+- receipt printed when member pays dues or on demand
+- print
+- reprint, need search, select for member
+#### Daily Receipts and Deposit Summary
+- require login and appropriate priv
+- log to audit log
+- select date range
+- has heading, pg num
+- has all payments collected, summary by payment type
+#### Contractor Receipts
+- require login and appropriate priv
+- log to audit log
+- select date range
+- lists total dues payments
+- has heading, pg num
+- has all payments collected, summary by payment type
+#### Member Information Change Report
+- require login and appropriate priv
+- log to audit log
+- lists all changes made for all member records in date range
+- has heading, pg num
+- has title, date range, cur date
+- has member name, register num, old/new info
+#### Membership Per-Capita Activity Report
+- require login and appropriate priv
+- log to audit log
+- lists membership status type changes
+- report heading (...)
+- heading, pg num
+- lists status changes by type for each charter type
+- total at bottom
+#### Member's Transaction summary
+- require login and appropriate priv
+- log to audit log
+- lists the total payments by mem in date range
+- search, select by member
+- select date range
+- include cur date, memb name address, list of mem payments
+#### Active Members and Retirees Total Report
+- require login and appropriate priv
+- log to audit log
+- lists the membership by charter type
+- only active/retiree
+- heading(...)
+- heading, pg num
+- body - memb name, address, init date, pay thru date
+- alpha sort
+- grouping by charter
+#### EEOC Report
+- require login and appropriate priv
+- log to audit log
+- list total memb with status type
+- abstract to totals only
+#### Years of Service
+- require login and appropriate priv
+- log to audit log
+- lists active and retiree types by years of service
+- enter num years since init
+- list all mem with num years
+- heading(...)
+- header, pg num
+- include mem name, init date
+- alpha sort
+#### Member Arrears Report
+- require login and appropriate priv
+- log to audit log
+- list mem who are past due
+- split into past due categories
+- header(...)
+- heading, pg num
+- list mem name, charter, paid thru date
+- alpha sort
+### User Identification, Authentication, and Authorization
+3 cat:
+- managing roles
+- managing users
+- auditing users
+#### roles
+- Every task must have a required privilege level
+#### management operations
+- create new role
+- edit a role - privileges
+- delete role (only if no assignees)
+- role report
+  - list names and priv
+#### management user operations
+- create new user
+- change username
+- change user pass
+- change user role
+- deactivate user
+- delete inactive user
+- user report
+  - specify user or all
+  - include users, roles, last login date
+#### pass guidelines
+- len = 8-64 char
+- periodic pass resets not required
+- new/changed pass checked vs common pass list
+- allow paste for pass
+- allow show pass
+- limit num of fialed pass attempts before lockout
+#### pass storage
+- meets SP 800-63B
+#### Failed login attempts
+- display login failure gui
+- login failure message for too many failed attempts
+- reset failed when success
+### User Auditing
+- formatting guidelines for logs
+- spec guidelines for logs
+#### Delete transaction
+- require login and appropriate priv
+- log to audit log
+- LMS admin
+- audit entry
+- deleted transaction retained
+### Global Config
+- Report heading format
+- min pass length
+- login attempts
+- conven fee
+- charter types
+- dues types
+- status types
+### Operating Environment
+#### Client/Server Model - multiuser
+- C++, witty, gui, may use SQL installed on host
 ## NonFunctional Requirements
-## Standards and References
-
-
-### Questions to do list
-- what defines a member vs a contractor
-- what is included in members info
-- what are the different membership statuses
-- how payment from members
-- what are s-charter dues
-- what are administrative dues
+### Performance
+- requires multiuser access concurrently
+### Security
+#### Secure Network Connection
+- TLS 1.2/1.3
+#### Secure PII Storage
+- requirements in 2.2.5 for pass and users
+### Software Quality Attributes
+#### User Documentation
+- install
+- configure
+- use LMS
+- detailed instructs using screenshots, diagrams, charts, tables, other visuals
+#### Source code
+- formal code doc
+#### Support for future modules
+- modules for future:
+  - training record for each member
+  - dispatch record for each member
+  - allow members to view Local contracts and other docs
