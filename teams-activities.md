@@ -1,4 +1,4 @@
-# Implementation notes 
+# Activities/Teams notes 
 
 ### Activities 
 - SDD doc 
