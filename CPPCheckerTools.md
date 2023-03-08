@@ -1,11 +1,9 @@
-### CPP CHECKER -- missed command
-`cppcheck ... `
-
+### CPP CHECKER
+`cppcheck ./cpp `
 
 
 ### CLANG CHECKER 
 `scan-build make`
-
 
 
 ### googletest
