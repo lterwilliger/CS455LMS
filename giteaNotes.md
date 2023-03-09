@@ -4,16 +4,17 @@ https://cs.csis.work:4455
 
 
 Steps:
-1.) press fork button in gitea 
-2.) Repository settings in top right corner add ssh key pub 
-3.) git clone https://cs.csis.work:4455/luterw/Example.git
-4.) git remote add upstream _gitea@cs.csis.work:OrgOne/Example.git
-5.) git branch doc-branch
-6.) git switch doc-branch
-    git add . 
-8.) git push --set-upstream origin doc-branch
-9.) in gitea again.. 
-10.) git pull upstream main
-  11.) if merge conflicts, solve
-12.)git pull upstream main
-13.) 
+<ol>
+<li> press fork button in gitea </li>
+<li> Repository settings in top right corner add ssh key pub </li>
+<li> git clone https://cs.csis.work:4455/luterw/Example.git</li>
+<li> git remote add upstream _gitea@cs.csis.work:OrgOne/Example.git</li>
+<li> git branch doc-branch</li>
+<li> git switch doc-branch</li>
+    git add . </li>
+<li> git push --set-upstream origin doc-branch</li>
+<li> in gitea again.. </li>
+<li> git pull upstream main</li>
+  <li> if merge conflicts, solve</li>
+<li>git pull upstream main</li>
+</ol>
