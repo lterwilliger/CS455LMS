@@ -12,8 +12,9 @@ Steps:
 <li> git branch doc-branch</li>
 <li> git switch doc-branch</li>
     git add . </li>
+<li>git commit </li>
 <li> git push --set-upstream origin doc-branch</li>
-<li> in gitea again.. </li>
+<li> in gitea again.. --pull request against orig repo</li>
 <li> git pull upstream main</li>
   <li> if merge conflicts, solve</li>
 <li>git pull upstream main</li>
