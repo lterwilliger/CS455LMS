@@ -39,14 +39,8 @@ Steps:
     
              git pull upstream main
 </li>
-<li> if merge conflicts, solve -- not done PR</li>
-<li> 
-    
-             git pull upstream main --rebase
-</li>
-<li> 
-    merge conflicts -- already PR 
-</li>
+<li> if merge conflicts, solve </li>
+
 <li> 
     
              git pull upstream main --rebase
@@ -61,9 +55,11 @@ Steps:
              git rebase --continue 
 </li>
 <li> 
+    merge conflicts -- already PR , else do PR now
+</li>
+<li> 
     
-             git push --force 
-(WE DONT NORMALLY WANT TO DO THIS BUT WORKING OUT OF SAME FILE) 
+             git push --force    (WE DONT NORMALLY WANT TO DO THIS BUT WORKING OUT OF SAME FILE) 
 </li>
 <li>
     
