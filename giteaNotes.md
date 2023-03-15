@@ -37,7 +37,7 @@ Steps:
 <li> in gitea again.. --pull request against orig repo</li>
 <li> 
     
-    git pull upstream main
+             git pull upstream main
 </li>
 <li> if merge conflicts, solve -- not done PR</li>
 <li> 
