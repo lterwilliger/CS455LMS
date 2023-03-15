@@ -22,6 +22,7 @@ Steps:
     
              git switch doc-branch
 </li>
+Make your changes now then...
 <li> 
     
              git add . 
@@ -34,18 +35,18 @@ Steps:
     
              git push --set-upstream origin doc-branch
 </li>
-<li> in gitea again.. --pull request against orig repo</li>
+in gitea again.. -- create pull request against orig repo
 <li> 
     
              git pull upstream main
 </li>
-<li> if merge conflicts, solve </li>
+if merge conflicts, solve 
 
 <li> 
     
              git pull upstream main --rebase
 </li>
-<li> fix the file </li>
+fix the file... 
 <li> 
     
              git add <filename> 
@@ -55,14 +56,16 @@ Steps:
              git rebase --continue 
 </li>
 <li> 
-    merge conflicts -- already PR , else do PR now
+    merge conflicts -- ONLY for already existing PR 
 </li>
 <li> 
     
              git push --force    (WE DONT NORMALLY WANT TO DO THIS BUT WORKING OUT OF SAME FILE) 
 </li>
+No PR -- do PR now
+Fix main branch -- 
 <li>
-    
+             git switch main
              git pull upstream main
 </li>
 </ul>
