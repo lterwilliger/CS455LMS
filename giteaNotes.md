@@ -65,7 +65,9 @@ fix the file...
 No PR -- do PR now
 Fix main branch -- 
 <li>
+    
              git switch main
+    
              git pull upstream main
 </li>
 </ul>
