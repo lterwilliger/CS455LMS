@@ -17,7 +17,8 @@ Steps:
 </li>
 <li> 
     
-             git branch doc-branch`</li>
+             git branch doc-branch
+</li>
 <li> 
     
              git switch doc-branch
